@@ -10,6 +10,10 @@
 		DD0C899B1DDF6A8E00DFB526 /* ExerciseMotionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0C89911DDF6A8E00DFB526 /* ExerciseMotionTracker.framework */; };
 		DD0C89A01DDF6A8E00DFB526 /* ExerciseMotionTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C899F1DDF6A8E00DFB526 /* ExerciseMotionTrackerTests.swift */; };
 		DD0C89A21DDF6A8E00DFB526 /* ExerciseMotionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0C89941DDF6A8E00DFB526 /* ExerciseMotionTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD0C89AF1DDF6FDD00DFB526 /* BodyJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89AB1DDF6FDD00DFB526 /* BodyJoint.swift */; };
+		DD0C89B11DDF6FDE00DFB526 /* LateralArmRaise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */; };
+		DD0C89B21DDF6FDE00DFB526 /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */; };
+		DD0C89B41DDF708000DFB526 /* ExerciseMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		DD0C899A1DDF6A8E00DFB526 /* ExerciseMotionTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExerciseMotionTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0C899F1DDF6A8E00DFB526 /* ExerciseMotionTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseMotionTrackerTests.swift; sourceTree = "<group>"; };
 		DD0C89A11DDF6A8E00DFB526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0C89AB1DDF6FDD00DFB526 /* BodyJoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyJoint.swift; sourceTree = "<group>"; };
+		DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LateralArmRaise.swift; sourceTree = "<group>"; };
+		DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skeleton.swift; sourceTree = "<group>"; };
+		DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				DD0C89941DDF6A8E00DFB526 /* ExerciseMotionTracker.h */,
+				DD0C89AB1DDF6FDD00DFB526 /* BodyJoint.swift */,
+				DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */,
+				DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */,
+				DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */,
 				DD0C89951DDF6A8E00DFB526 /* Info.plist */,
 			);
 			path = ExerciseMotionTracker;
@@ -149,6 +161,7 @@
 					DD0C89901DDF6A8E00DFB526 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = YY8GP9C75S;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					DD0C89991DDF6A8E00DFB526 = {
@@ -198,6 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0C89B41DDF708000DFB526 /* ExerciseMonitor.swift in Sources */,
+				DD0C89B11DDF6FDE00DFB526 /* LateralArmRaise.swift in Sources */,
+				DD0C89B21DDF6FDE00DFB526 /* Skeleton.swift in Sources */,
+				DD0C89AF1DDF6FDD00DFB526 /* BodyJoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +339,7 @@
 		DD0C89A61DDF6A8E00DFB526 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YY8GP9C75S;
@@ -334,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.capstone.go9.ExerciseMotionTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +360,7 @@
 		DD0C89A71DDF6A8E00DFB526 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YY8GP9C75S;
@@ -360,6 +380,7 @@
 		DD0C89A91DDF6A8E00DFB526 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YY8GP9C75S;
 				INFOPLIST_FILE = ExerciseMotionTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +393,7 @@
 		DD0C89AA1DDF6A8E00DFB526 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YY8GP9C75S;
 				INFOPLIST_FILE = ExerciseMotionTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
