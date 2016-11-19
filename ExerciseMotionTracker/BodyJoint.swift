@@ -31,7 +31,7 @@ final public class BodyJoint
     var currPosition = Position()
     var currOrientation = Quaternion()
     
-    init(initial_x: Double, initial_y: Double, initial_z: Double)
+    public init(initial_x: Double, initial_y: Double, initial_z: Double)
     {
         currPosition.x_ = initial_x
         currPosition.y_ = initial_y

@@ -11,7 +11,7 @@ import Foundation
 final public class LateralArmRaise: ExerciseMonitor
 {
     
-    override func getPercentComplete() -> Double {
+    override public func getPercentComplete() -> Double {
         
         var percentComplete: Double
         let wrist = skeleton.leftWrist

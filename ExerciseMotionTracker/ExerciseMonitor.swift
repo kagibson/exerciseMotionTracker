@@ -12,13 +12,13 @@ public class ExerciseMonitor
 {
     let skeleton: Skeleton
     
-    init(skeleton: Skeleton)
+    public init(skeleton: Skeleton)
     {
         self.skeleton = skeleton
         
     }
     
-    func getPercentComplete() -> Double {
+    public func getPercentComplete() -> Double {
         return 0
     }
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserBodyMeasurements
+public struct UserBodyMeasurements
 {
     let lowerArmLength: Double
     let upperArmLength: Double
@@ -25,7 +25,7 @@ final public class Skeleton
     //let rightShoulder: BodyJoint
     let userDimensions: UserBodyMeasurements
     
-    init(leftWrist: BodyJoint, leftElbow: BodyJoint, leftShoulder: BodyJoint, userDimensions: UserBodyMeasurements)
+    public init(leftWrist: BodyJoint, leftElbow: BodyJoint, leftShoulder: BodyJoint, userDimensions: UserBodyMeasurements)
     {
         self.leftWrist = leftWrist
         self.leftElbow = leftElbow
