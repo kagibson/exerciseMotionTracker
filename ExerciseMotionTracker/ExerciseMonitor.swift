@@ -18,7 +18,7 @@ public class ExerciseMonitor
         
     }
     
-    public func getPercentComplete() -> Double {
+    public func getPercentComplete() -> Double? {
         return 0
     }
     

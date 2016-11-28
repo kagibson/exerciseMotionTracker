@@ -14,6 +14,7 @@
 		DD0C89B11DDF6FDE00DFB526 /* LateralArmRaise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */; };
 		DD0C89B21DDF6FDE00DFB526 /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */; };
 		DD0C89B41DDF708000DFB526 /* ExerciseMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */; };
+		DD641F8B1DEB9684005DF25D /* BicepCurl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD641F8A1DEB9684005DF25D /* BicepCurl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LateralArmRaise.swift; sourceTree = "<group>"; };
 		DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skeleton.swift; sourceTree = "<group>"; };
 		DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseMonitor.swift; sourceTree = "<group>"; };
+		DD641F8A1DEB9684005DF25D /* BicepCurl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicepCurl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				DD0C89AB1DDF6FDD00DFB526 /* BodyJoint.swift */,
 				DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */,
 				DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */,
+				DD641F8A1DEB9684005DF25D /* BicepCurl.swift */,
 				DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */,
 				DD0C89951DDF6A8E00DFB526 /* Info.plist */,
 			);
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD641F8B1DEB9684005DF25D /* BicepCurl.swift in Sources */,
 				DD0C89B41DDF708000DFB526 /* ExerciseMonitor.swift in Sources */,
 				DD0C89B11DDF6FDE00DFB526 /* LateralArmRaise.swift in Sources */,
 				DD0C89B21DDF6FDE00DFB526 /* Skeleton.swift in Sources */,
@@ -422,6 +426,7 @@
 				DD0C89A71DDF6A8E00DFB526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD0C89A81DDF6A8E00DFB526 /* Build configuration list for PBXNativeTarget "ExerciseMotionTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				DD0C89AA1DDF6A8E00DFB526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
