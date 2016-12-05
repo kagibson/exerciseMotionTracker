@@ -64,12 +64,11 @@ final public class BodyJoint
         
         let q2Conj = q2.getConjugate()
         
-        let cosTheta = q2.getDotProduct(q2: q2Conj)
+        let cosTheta = q1.getDotProduct(q2: q2Conj)
         
         // do i need to subtract this from 2pi if greater than pi?
         return acos(cosTheta)
     
     }
-    
     
 }
