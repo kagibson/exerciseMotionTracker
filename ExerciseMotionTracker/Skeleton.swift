@@ -28,9 +28,11 @@ final public class Skeleton
     }
     
     // updates the orientation of each BodyJoint using quaternion data received from the sensors
-    public func updateFromSensors()
+    public func updateFromSensors(sensorData: [Double])
     {
-    
+        self.rightWrist.orientation = Quaternion(w_: sensorData[0], x_: sensorData[1], y_: sensorData[2], z_: sensorData[3])
+        self.rightElbow.orientation = Quaternion(w_: sensorData[4], x_: sensorData[5], y_: sensorData[6], z_: sensorData[7])
+        self.rightShoulder.orientation = Quaternion(w_: sensorData[8], x_: sensorData[9], y_: sensorData[10], z_: sensorData[11])
     }
     
 }
