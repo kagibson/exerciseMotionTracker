@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Quaternion
+public struct Quaternion
 {
     var w_ = 0.0
     var x_ = 0.0
