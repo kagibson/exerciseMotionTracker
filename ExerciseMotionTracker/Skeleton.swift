@@ -10,29 +10,29 @@ import Foundation
 
 final public class Skeleton
 {
-    //let leftWrist: BodyJoint
-    //let leftElbow: BodyJoint
-    //let leftShoulder: BodyJoint
-    let rightWrist: BodyJoint
-    let rightElbow: BodyJoint
+    let leftForearm: BodyJoint
+    let leftBicep: BodyJoint
+    let leftShoulder: BodyJoint
+    let rightForearm: BodyJoint
+    let rightBicep: BodyJoint
     let rightShoulder: BodyJoint
     
     public init()
     {
-        //self.leftWrist = BodyJoint()
-        //self.leftElbow = BodyJoint()
-        //self.leftShoulder = BodyJoint()
-        self.rightWrist = BodyJoint()
-        self.rightElbow = BodyJoint()
+        self.leftForearm = BodyJoint()
+        self.leftBicep = BodyJoint()
+        self.leftShoulder = BodyJoint()
+        self.rightForearm = BodyJoint()
+        self.rightBicep = BodyJoint()
         self.rightShoulder = BodyJoint()
     }
     
     // updates the orientation of each BodyJoint using quaternion data received from the sensors
-    public func updateFromSensors(sensorData: [Double])
+    public func updateFromSensors(singleArmSensorData: [Float])
     {
-        self.rightWrist.orientation = Quaternion(w_: sensorData[0], x_: sensorData[1], y_: sensorData[2], z_: sensorData[3])
-        self.rightElbow.orientation = Quaternion(w_: sensorData[4], x_: sensorData[5], y_: sensorData[6], z_: sensorData[7])
-        self.rightShoulder.orientation = Quaternion(w_: sensorData[8], x_: sensorData[9], y_: sensorData[10], z_: sensorData[11])
+        self.rightForearm.orientation = Quaternion(w_: singleArmSensorData[0], x_: singleArmSensorData[1], y_: singleArmSensorData[2], z_: singleArmSensorData[3])
+        self.rightBicep.orientation = Quaternion(w_: singleArmSensorData[4], x_: singleArmSensorData[5], y_: singleArmSensorData[6], z_: singleArmSensorData[7])
+        self.rightShoulder.orientation = Quaternion(w_: singleArmSensorData[8], x_: singleArmSensorData[9], y_: singleArmSensorData[10], z_: singleArmSensorData[11])
     }
     
 }

@@ -10,12 +10,12 @@ import Foundation
 
 public struct Quaternion
 {
-    var w_ = 0.0
-    var x_ = 0.0
-    var y_ = 0.0
-    var z_ = 0.0
+    var w_: Float = 0.0
+    var x_: Float = 0.0
+    var y_: Float = 0.0
+    var z_: Float = 0.0
     
-    var norm: Double
+    var norm: Float
     {
         get
         {
@@ -36,7 +36,7 @@ public struct Quaternion
     }
     
     // returns the dot product of itself and another quaternion
-    public func getDotProduct(q2: Quaternion) -> Double
+    public func getDotProduct(q2: Quaternion) -> Float
     {
         let q1 = self
         let product = (q1.w_ * q2.w_) + (q1.x_ * q2.x_) + (q1.y_ * q2.y_) + (q1.z_ * q2.z_)
@@ -53,7 +53,7 @@ final public class BodyJoint
         orientation = Quaternion()
     }
     
-    public func getAngleBetweenJoints(otherJoint: BodyJoint) -> Double
+    public func getAngleBetweenJoints(otherJoint: BodyJoint) -> Float
     {
         var q1 = self.orientation
         var q2 = otherJoint.orientation

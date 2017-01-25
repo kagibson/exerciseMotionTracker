@@ -10,17 +10,17 @@ import Foundation
 
 final public class BicepCurl: ExerciseMonitor
 {
-    let MAX_CURL_ANGLE = 0.5 * M_PI // not sure what this angle will be
+    let MAX_CURL_ANGLE: Float = Float(0.5) * Float(M_PI) // not sure what this angle will be
     
     // returns percent complete of a bicep curl
-    override public func getPercentComplete() -> Double? {
+    override public func getPercentComplete() -> Float? {
         
-        var percentComplete: Double
+        var percentComplete: Float
         
-        let rightElbow = skeleton.rightElbow
-        let rightWrist = skeleton.rightWrist
+        let rightBicep = skeleton.rightBicep
+        let rightForearm = skeleton.rightForearm
         
-        let curlAngle = rightElbow.getAngleBetweenJoints(otherJoint: rightWrist)
+        let curlAngle = rightBicep.getAngleBetweenJoints(otherJoint: rightForearm)
         
         percentComplete = curlAngle /   MAX_CURL_ANGLE
         
