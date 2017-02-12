@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "ExerciseMotionTracker"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Tracks a users motion while performing an exercise."
   s.description  = "Uses IMU quaternion data to track a users motion as they perform exercises"
   s.homepage     = "https://github.com/kagibson/exerciseMotionTracker"
