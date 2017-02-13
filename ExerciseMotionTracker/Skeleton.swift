@@ -28,7 +28,7 @@ final public class Skeleton
         self.bodyJoints["rightForearm"] = BodyJoint()
         self.bodyJoints["rightBicep"] = BodyJoint()
         //self.bodyJoints["rightShoulder"] = BodyJoint()
-        skeletonDelegate = nil
+        //skeletonDelegate = nil
     }
     
     // updates the orientation of each BodyJoint using quaternion data received from the sensors
