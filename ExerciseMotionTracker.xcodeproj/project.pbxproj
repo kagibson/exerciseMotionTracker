@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD09D7CC1E5275D0001D4091 /* SkeletonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09D7CB1E5275D0001D4091 /* SkeletonDelegate.swift */; };
 		DD0C899B1DDF6A8E00DFB526 /* ExerciseMotionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0C89911DDF6A8E00DFB526 /* ExerciseMotionTracker.framework */; };
 		DD0C89A01DDF6A8E00DFB526 /* ExerciseMotionTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C899F1DDF6A8E00DFB526 /* ExerciseMotionTrackerTests.swift */; };
 		DD0C89A21DDF6A8E00DFB526 /* ExerciseMotionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0C89941DDF6A8E00DFB526 /* ExerciseMotionTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD09D7CB1E5275D0001D4091 /* SkeletonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonDelegate.swift; sourceTree = "<group>"; };
 		DD0C89911DDF6A8E00DFB526 /* ExerciseMotionTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExerciseMotionTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0C89941DDF6A8E00DFB526 /* ExerciseMotionTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseMotionTracker.h; sourceTree = "<group>"; };
 		DD0C89951DDF6A8E00DFB526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */,
 				DD641F8A1DEB9684005DF25D /* BicepCurl.swift */,
 				DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */,
+				DD09D7CB1E5275D0001D4091 /* SkeletonDelegate.swift */,
 				DD0C89951DDF6A8E00DFB526 /* Info.plist */,
 			);
 			path = ExerciseMotionTracker;
@@ -219,6 +222,7 @@
 				DD0C89B11DDF6FDE00DFB526 /* LateralArmRaise.swift in Sources */,
 				DD0C89B21DDF6FDE00DFB526 /* Skeleton.swift in Sources */,
 				DD0C89AF1DDF6FDD00DFB526 /* BodyJoint.swift in Sources */,
+				DD09D7CC1E5275D0001D4091 /* SkeletonDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol SkeletonDelegate {
-     func updateBodyJoints(sensorData: [String:BodyJoint])
-}
-
 final public class Skeleton
 {
     /*let leftForearm: BodyJoint
@@ -20,7 +16,7 @@ final public class Skeleton
     let rightForearm: BodyJoint
     let rightBicep: BodyJoint
     //let rightShoulder: BodyJoint */
-    let skeletonDelegate: SkeletonDelegate?
+    public let skeletonDelegate: SkeletonDelegate?
     
     var bodyJoints = [String:BodyJoint]()
     
