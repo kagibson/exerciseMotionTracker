@@ -28,7 +28,7 @@ final public class Skeleton
         self.bodyJoints["rightForearm"] = BodyJoint()
         self.bodyJoints["rightBicep"] = BodyJoint()
         //self.bodyJoints["rightShoulder"] = BodyJoint()
-        //skeletonDelegate = nil
+
     }
     
     // updates the orientation of each BodyJoint using quaternion data received from the sensors
@@ -38,11 +38,9 @@ final public class Skeleton
         self.bodyJoints["leftBicep"]?.orientation = Quaternion(w_: sensorData["s2w"]!, x_: sensorData["s2x"]!, y_: sensorData["s2y"]!, z_: sensorData["s2z"]!)
         self.bodyJoints["rightForearm"]?.orientation = Quaternion(w_: sensorData["s3w"]!, x_: sensorData["s3x"]!, y_: sensorData["s3y"]!, z_: sensorData["s3z"]!)
         self.bodyJoints["rightBicep"]?.orientation = Quaternion(w_: sensorData["s4w"]!, x_: sensorData["s4x"]!, y_: sensorData["s4y"]!, z_: sensorData["s4z"]!)
-        if (self.skeletonDelegate != nil)
-        {
-            print("its working!")
-            self.skeletonDelegate?.updateBodyJoints(sensorData: self.bodyJoints)
-        }
+        
+        self.skeletonDelegate?.updateBodyJoints(sensorData: self.bodyJoints)
+    
         
     }
     
