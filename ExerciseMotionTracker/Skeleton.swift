@@ -39,7 +39,10 @@ final public class Skeleton
         self.bodyJoints["rightForearm"]?.orientation = Quaternion(w_: sensorData["s3w"]!, x_: sensorData["s3x"]!, y_: sensorData["s3y"]!, z_: sensorData["s3z"]!)
         self.bodyJoints["rightBicep"]?.orientation = Quaternion(w_: sensorData["s4w"]!, x_: sensorData["s4x"]!, y_: sensorData["s4y"]!, z_: sensorData["s4z"]!)
         
-        skeletonDelegate?.updateBodyJoints(sensorData: self.bodyJoints)
+        if (skeletonDelegate != nil)
+        {
+           skeletonDelegate?.updateBodyJoints(sensorData: self.bodyJoints)
+        }
     
         
     }
