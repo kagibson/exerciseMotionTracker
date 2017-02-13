@@ -17,12 +17,12 @@ final public class BicepCurl: ExerciseMonitor
         
         var percentComplete: Float
         
-        let rightBicep = skeleton.rightBicep
-        let rightForearm = skeleton.rightForearm
+        let rightBicep = skeleton.bodyJoints["rightBicep"]
+        let rightForearm = skeleton.bodyJoints["rightForerm"]
         
-        let curlAngle = rightBicep.getAngleBetweenJoints(otherJoint: rightForearm)
+        let curlAngle = rightBicep?.getAngleBetweenJoints(otherJoint: rightForearm!)
         
-        percentComplete = curlAngle /   MAX_CURL_ANGLE
+        percentComplete = curlAngle! /   MAX_CURL_ANGLE
         
         return percentComplete
         
