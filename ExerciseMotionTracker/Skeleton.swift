@@ -35,15 +35,12 @@ final public class Skeleton
     public func updateFromSensors(sensorData: [String:Float])
     {
         self.bodyJoints["leftForearm"]?.orientation = Quaternion(w_: sensorData["s1w"]!, x_: sensorData["s1x"]!, y_: sensorData["s1y"]!, z_: sensorData["s1z"]!) // should probably not force unwrap
-        print("leftForearm")
         self.bodyJoints["leftBicep"]?.orientation = Quaternion(w_: sensorData["s2w"]!, x_: sensorData["s2x"]!, y_: sensorData["s2y"]!, z_: sensorData["s2z"]!)
-        print("leftBicep")
         self.bodyJoints["rightForearm"]?.orientation = Quaternion(w_: sensorData["s3w"]!, x_: sensorData["s3x"]!, y_: sensorData["s3y"]!, z_: sensorData["s3z"]!)
-        print("rightForearm")
         self.bodyJoints["rightBicep"]?.orientation = Quaternion(w_: sensorData["s4w"]!, x_: sensorData["s4x"]!, y_: sensorData["s4y"]!, z_: sensorData["s4z"]!)
-        print("rightBicep")
         if (self.skeletonDelegate != nil)
         {
+            print("its working!")
             self.skeletonDelegate?.updateBodyJoints(sensorData: self.bodyJoints)
         }
         
