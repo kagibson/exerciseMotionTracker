@@ -10,12 +10,12 @@ import Foundation
 
 public struct Quaternion
 {
-    var w_: Float = 0.0
-    var x_: Float = 0.0
-    var y_: Float = 0.0
-    var z_: Float = 0.0
+    public var w_: Float = 0.0
+    public var x_: Float = 0.0
+    public var y_: Float = 0.0
+    public var z_: Float = 0.0
     
-    var norm: Float
+    public var norm: Float
     {
         get
         {
@@ -46,7 +46,7 @@ public struct Quaternion
 
 final public class BodyJoint
 {
-    var orientation: Quaternion
+    public var orientation: Quaternion
     
     public init()
     {
