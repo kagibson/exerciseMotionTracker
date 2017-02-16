@@ -16,6 +16,7 @@
 		DD0C89B21DDF6FDE00DFB526 /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */; };
 		DD0C89B41DDF708000DFB526 /* ExerciseMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */; };
 		DD641F8B1DEB9684005DF25D /* BicepCurl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD641F8A1DEB9684005DF25D /* BicepCurl.swift */; };
+		DD74FAF31E5661690020786D /* ExerciseMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74FAF21E5661690020786D /* ExerciseMonitorDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skeleton.swift; sourceTree = "<group>"; };
 		DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseMonitor.swift; sourceTree = "<group>"; };
 		DD641F8A1DEB9684005DF25D /* BicepCurl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicepCurl.swift; sourceTree = "<group>"; };
+		DD74FAF21E5661690020786D /* ExerciseMonitorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseMonitorDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */,
 				DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */,
 				DD641F8A1DEB9684005DF25D /* BicepCurl.swift */,
+				DD74FAF21E5661690020786D /* ExerciseMonitorDelegate.swift */,
 				DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */,
 				DD09D7CB1E5275D0001D4091 /* SkeletonDelegate.swift */,
 				DD0C89951DDF6A8E00DFB526 /* Info.plist */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD641F8B1DEB9684005DF25D /* BicepCurl.swift in Sources */,
+				DD74FAF31E5661690020786D /* ExerciseMonitorDelegate.swift in Sources */,
 				DD0C89B41DDF708000DFB526 /* ExerciseMonitor.swift in Sources */,
 				DD0C89B11DDF6FDE00DFB526 /* LateralArmRaise.swift in Sources */,
 				DD0C89B21DDF6FDE00DFB526 /* Skeleton.swift in Sources */,

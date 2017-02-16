@@ -11,16 +11,22 @@ import Foundation
 public class ExerciseMonitor
 {
     let skeleton: Skeleton
+    public var exerciseMonitorDelegate: ExerciseMonitorDelegate?
     
     public init(skeleton: Skeleton)
     {
         self.skeleton = skeleton
-        
     }
     
     public func getPercentComplete() -> Float? {
         return 0
     }
     
-    
+    public func updateDelegates()
+    {
+        if (self.exerciseMonitorDelegate != nil)
+        {
+            self.exerciseMonitorDelegate?.completionLevelDidUpdate()
+        }
+    }
 }

@@ -17,7 +17,6 @@ final public class Skeleton
     let rightBicep: BodyJoint
     //let rightShoulder: BodyJoint */
     public var skeletonDelegate: SkeletonDelegate?
-    
     var bodyJoints = [String:BodyJoint]()
     
     public init()
