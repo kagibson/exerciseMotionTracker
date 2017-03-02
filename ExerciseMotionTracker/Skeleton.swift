@@ -23,10 +23,12 @@ final public class Skeleton
     {
         self.bodyJoints["leftForearm"] = BodyJoint()
         self.bodyJoints["leftBicep"] = BodyJoint()
-        //self.bodyJoints["rightShoulder"] = BodyJoint()
+        self.bodyJoints["leftLowerLeg"] = BodyJoint()
+        self.bodyJoints["leftUpperLeg"] = BodyJoint()
         self.bodyJoints["rightForearm"] = BodyJoint()
         self.bodyJoints["rightBicep"] = BodyJoint()
-        //self.bodyJoints["rightShoulder"] = BodyJoint()
+        self.bodyJoints["rightLowerLeg"] = BodyJoint()
+        self.bodyJoints["rightUpperLeg"] = BodyJoint()
 
     }
     
@@ -37,6 +39,13 @@ final public class Skeleton
         self.bodyJoints["rightBicep"]?.orientation = Quaternion(w_: sensorData["s1w"]!, x_: sensorData["s1x"]!, y_: sensorData["s1y"]!, z_: sensorData["s1z"]!)
         self.bodyJoints["leftBicep"]?.orientation = Quaternion(w_: sensorData["s2w"]!, x_: sensorData["s2x"]!, y_: sensorData["s2y"]!, z_: sensorData["s2z"]!)
         self.bodyJoints["leftForearm"]?.orientation = Quaternion(w_: sensorData["s3w"]!, x_: sensorData["s3x"]!, y_: sensorData["s3y"]!, z_: sensorData["s3z"]!)
+        
+        // dummy values for now
+        self.bodyJoints["rightLowerLeg"]?.orientation = Quaternion(w_: 1.0, x_: 0.0, y_: 0.0, z_: 0.0)
+        self.bodyJoints["rightUpperLeg"]?.orientation = Quaternion(w_: 1.0, x_: 0.0, y_: 0.0, z_: 0.0)
+        self.bodyJoints["leftLowerLeg"]?.orientation = Quaternion(w_: 1.0, x_: 0.0, y_: 0.0, z_: 0.0)
+        self.bodyJoints["leftUpperLeg"]?.orientation = Quaternion(w_: 1.0, x_: 0.0, y_: 0.0, z_: 0.0)
+        
         
         if (skeletonDelegate != nil)
         {
