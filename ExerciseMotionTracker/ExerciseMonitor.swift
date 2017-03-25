@@ -18,7 +18,7 @@ public class ExerciseMonitor
         self.skeleton = skeleton
     }
     
-    public func getPercentComplete() -> Float? {
+    public func getPercentComplete() -> Int? {
         return 0
     }
     

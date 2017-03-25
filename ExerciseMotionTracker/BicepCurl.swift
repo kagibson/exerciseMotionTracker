@@ -10,21 +10,21 @@ import Foundation
 
 final public class BicepCurl: ExerciseMonitor
 {
-    let EXERCISE_RANGE: Float = 50
+    let EXERCISE_RANGE: Float = (Float(48) * Float(M_PI)) / Float(180)
     var MIN_CURL_ANGLE: Float = (Float(70) * Float(M_PI)) / Float(180)
         
     // returns percent complete of a bicep curl
-    override public func getPercentComplete() -> Float? {
+    override public func getPercentComplete() -> Int? {
         
-        var percentComplete: Float
+        var percentComplete: Int
         
         let rightBicep = skeleton.bodyJoints["rightBicep"]
         let rightForearm = skeleton.bodyJoints["rightForearm"]
         
         let curlAngle = rightBicep?.getAngleBetweenJoints(otherJoint: rightForearm!)
         
-        percentComplete = (curlAngle! - MIN_CURL_ANGLE) / EXERCISE_RANGE
-        
+        percentComplete = (Int) (100.0 * (abs(curlAngle! - MIN_CURL_ANGLE) / EXERCISE_RANGE))
+
         return percentComplete
         
     }
