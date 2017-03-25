@@ -23,8 +23,21 @@ final public class BicepCurl: ExerciseMonitor
         
         let curlAngle = rightBicep?.getAngleBetweenJoints(otherJoint: rightForearm!)
         
-        percentComplete = (Int) (100.0 * (abs(curlAngle! - MIN_CURL_ANGLE) / EXERCISE_RANGE))
-
+        if (curlAngle! < MIN_CURL_ANGLE)
+        {
+            percentComplete = 0;
+        }
+        
+        else if (curlAngle! > (MIN_CURL_ANGLE + EXERCISE_RANGE))
+        {
+            percentComplete = 100;
+        }
+        
+        else
+        {
+            percentComplete = (Int) (100.0 * (abs(curlAngle! - MIN_CURL_ANGLE) / EXERCISE_RANGE))
+        }
+        
         return percentComplete
         
     }
