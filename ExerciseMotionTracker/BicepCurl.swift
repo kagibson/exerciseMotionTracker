@@ -10,7 +10,7 @@ import Foundation
 
 final public class BicepCurl: ExerciseMonitor
 {
-    let EXERCISE_RANGE: Float = (Float(48) * Float(M_PI)) / Float(180)
+    let EXERCISE_RANGE: Float = (Float(40) * Float(M_PI)) / Float(180)
     var MIN_CURL_ANGLE: Float = (Float(70) * Float(M_PI)) / Float(180)
         
     // returns percent complete of a bicep curl

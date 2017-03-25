@@ -11,8 +11,8 @@ import Foundation
 final public class LateralArmRaise: ExerciseMonitor
 {
     
-    override public func getPercentComplete() -> Float? {
+    override public func getPercentComplete() -> Int? {
         // need to fill in
-        return 0.0
+        return 0
     }
 }
