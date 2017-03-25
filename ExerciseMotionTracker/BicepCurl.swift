@@ -30,7 +30,7 @@ final public class BicepCurl: ExerciseMonitor
     }
     
     // get initial curl angle for min angle
-    public func initAngle()
+    override public func initAngle()
     {
         let rightBicep = skeleton.bodyJoints["rightBicep"]
         let rightForearm = skeleton.bodyJoints["rightForearm"]

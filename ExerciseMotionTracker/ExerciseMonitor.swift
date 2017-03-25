@@ -22,6 +22,11 @@ public class ExerciseMonitor
         return 0
     }
     
+    public func initAngle()
+    {
+        
+    }
+    
     public func updateDelegates()
     {
         if (self.exerciseMonitorDelegate != nil)
