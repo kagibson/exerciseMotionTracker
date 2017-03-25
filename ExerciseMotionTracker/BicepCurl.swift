@@ -17,6 +17,7 @@ final public class BicepCurl: ExerciseMonitor
     override public func getPercentComplete() -> Int? {
         
         var percentComplete: Int
+        var percentCompleteFloat: Float
         
         let rightBicep = skeleton.bodyJoints["rightBicep"]
         let rightForearm = skeleton.bodyJoints["rightForearm"]
@@ -35,7 +36,16 @@ final public class BicepCurl: ExerciseMonitor
         
         else
         {
-            percentComplete = (Int) (100.0 * (abs(curlAngle! - MIN_CURL_ANGLE) / EXERCISE_RANGE))
+            percentCompleteFloat = (100.0 * (abs(curlAngle! - MIN_CURL_ANGLE) / EXERCISE_RANGE))
+            
+            if (!percentCompleteFloat.isNaN)
+            {
+                    percentComplete = Int(percentCompleteFloat)
+            }
+            else
+            {
+                percentComplete = 0
+            }
         }
         
         return percentComplete
