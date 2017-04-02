@@ -12,10 +12,13 @@
 		DD0C89A01DDF6A8E00DFB526 /* ExerciseMotionTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C899F1DDF6A8E00DFB526 /* ExerciseMotionTrackerTests.swift */; };
 		DD0C89A21DDF6A8E00DFB526 /* ExerciseMotionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0C89941DDF6A8E00DFB526 /* ExerciseMotionTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD0C89AF1DDF6FDD00DFB526 /* BodyJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89AB1DDF6FDD00DFB526 /* BodyJoint.swift */; };
-		DD0C89B11DDF6FDE00DFB526 /* LateralArmRaise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */; };
 		DD0C89B21DDF6FDE00DFB526 /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */; };
 		DD0C89B41DDF708000DFB526 /* ExerciseMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */; };
 		DD641F8B1DEB9684005DF25D /* BicepCurl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD641F8A1DEB9684005DF25D /* BicepCurl.swift */; };
+		DD735D851E918E9700C9C678 /* OverheadPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD735D841E918E9700C9C678 /* OverheadPress.swift */; };
+		DD735D871E918F9B00C9C678 /* TricepExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD735D861E918F9B00C9C678 /* TricepExtension.swift */; };
+		DD735D891E91912F00C9C678 /* Fly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD735D881E91912F00C9C678 /* Fly.swift */; };
+		DD735D8B1E91916600C9C678 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD735D8A1E91916600C9C678 /* Row.swift */; };
 		DD74FAF31E5661690020786D /* ExerciseMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74FAF21E5661690020786D /* ExerciseMonitorDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,10 +41,13 @@
 		DD0C899F1DDF6A8E00DFB526 /* ExerciseMotionTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseMotionTrackerTests.swift; sourceTree = "<group>"; };
 		DD0C89A11DDF6A8E00DFB526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD0C89AB1DDF6FDD00DFB526 /* BodyJoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyJoint.swift; sourceTree = "<group>"; };
-		DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LateralArmRaise.swift; sourceTree = "<group>"; };
 		DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skeleton.swift; sourceTree = "<group>"; };
 		DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseMonitor.swift; sourceTree = "<group>"; };
 		DD641F8A1DEB9684005DF25D /* BicepCurl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicepCurl.swift; sourceTree = "<group>"; };
+		DD735D841E918E9700C9C678 /* OverheadPress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverheadPress.swift; path = ../OverheadPress.swift; sourceTree = "<group>"; };
+		DD735D861E918F9B00C9C678 /* TricepExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TricepExtension.swift; sourceTree = "<group>"; };
+		DD735D881E91912F00C9C678 /* Fly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fly.swift; sourceTree = "<group>"; };
+		DD735D8A1E91916600C9C678 /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		DD74FAF21E5661690020786D /* ExerciseMonitorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseMonitorDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +94,11 @@
 				DD0C89941DDF6A8E00DFB526 /* ExerciseMotionTracker.h */,
 				DD0C89AB1DDF6FDD00DFB526 /* BodyJoint.swift */,
 				DD0C89B31DDF708000DFB526 /* ExerciseMonitor.swift */,
-				DD0C89AD1DDF6FDD00DFB526 /* LateralArmRaise.swift */,
 				DD641F8A1DEB9684005DF25D /* BicepCurl.swift */,
+				DD735D841E918E9700C9C678 /* OverheadPress.swift */,
+				DD735D861E918F9B00C9C678 /* TricepExtension.swift */,
+				DD735D881E91912F00C9C678 /* Fly.swift */,
+				DD735D8A1E91916600C9C678 /* Row.swift */,
 				DD74FAF21E5661690020786D /* ExerciseMonitorDelegate.swift */,
 				DD0C89AE1DDF6FDD00DFB526 /* Skeleton.swift */,
 				DD09D7CB1E5275D0001D4091 /* SkeletonDelegate.swift */,
@@ -220,12 +229,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD735D851E918E9700C9C678 /* OverheadPress.swift in Sources */,
+				DD735D891E91912F00C9C678 /* Fly.swift in Sources */,
 				DD641F8B1DEB9684005DF25D /* BicepCurl.swift in Sources */,
 				DD74FAF31E5661690020786D /* ExerciseMonitorDelegate.swift in Sources */,
 				DD0C89B41DDF708000DFB526 /* ExerciseMonitor.swift in Sources */,
-				DD0C89B11DDF6FDE00DFB526 /* LateralArmRaise.swift in Sources */,
+				DD735D871E918F9B00C9C678 /* TricepExtension.swift in Sources */,
 				DD0C89B21DDF6FDE00DFB526 /* Skeleton.swift in Sources */,
 				DD0C89AF1DDF6FDD00DFB526 /* BodyJoint.swift in Sources */,
+				DD735D8B1E91916600C9C678 /* Row.swift in Sources */,
 				DD09D7CC1E5275D0001D4091 /* SkeletonDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
