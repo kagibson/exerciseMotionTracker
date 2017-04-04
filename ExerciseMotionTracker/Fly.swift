@@ -12,7 +12,7 @@ final public class Fly: ExerciseMonitor
 {
     let EXERCISE_RANGE: Float = (Float(32) * Float(M_PI)) / Float(180)
     var MAX_FOREARM_ANGLE: Float = (Float(86) * Float(M_PI)) / Float(180)
-    var BENT_ELBOW_CONSTRAINT: Float = (Float(30) * Float(M_PI) / Float(180))
+    var BENT_ELBOW_CONSTRAINT: Float = (Float(25) * Float(M_PI) / Float(180))
     
     // returns percent complete of a bicep curl
     override public func getPercentComplete() -> Int? {
